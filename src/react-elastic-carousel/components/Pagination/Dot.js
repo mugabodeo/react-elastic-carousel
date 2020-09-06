@@ -3,16 +3,16 @@ import PropTypes from "prop-types";
 import styled from "styled-components";
 import { cssPrefix } from "../../utils/helpers";
 
-const boxShadow = "0 0 1px 2px rgba(0, 0, 0, 0.5)";
-const activeBoxShadow = "0 0 1px 3px rgba(103,58,183,1)";
-const hoveredBoxShadow = "0 0 1px 3px rgba(103,58,183,.5)";
+const boxShadow = "0 0 1px 2px rgb(0, 196, 255)";
+const activeBoxShadow = "0 0 1px 3px rgb(0, 196, 255)";
+const hoveredBoxShadow = "0 0 1px 3px rgb(0, 196, 255)";
 
 const Dot = styled.button.attrs(({ type = "button" }) => ({ type }))`
   transition: all 250ms ease;
   border: none;
   margin: 5px;
   background-color: ${({ active }) =>
-    active ? "rgba(103,58,183,.5)" : "transparent"};
+    active ? "rgb(0, 196, 255)" : "transparent"};
   font-size: 1.3em;
   content: "";
   height: 10px;

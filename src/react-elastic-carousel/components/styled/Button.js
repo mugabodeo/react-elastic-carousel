@@ -3,7 +3,7 @@ import styled from "styled-components";
 export default styled.button.attrs(({ type = "button" }) => ({ type }))`
   transition: all 0.3s ease;
   font-size: 1.6em;
-  background-color: rgba(103, 58, 183, 0.1);
+  background-color: rgb(0, 196, 255);
   color: ${props => (props.disabled ? "#999" : "#333")};
   box-shadow: 0 0 2px 0px #333;
   border-radius: 50%;
@@ -18,7 +18,7 @@ export default styled.button.attrs(({ type = "button" }) => ({ type }))`
   &:hover:enabled,
   &:focus:enabled {
     color: #fff;
-    background-color: rgba(103, 58, 183, 1);
+    background-color: rgb(0, 196, 255);
     box-shadow: 0 0 2px 0 #333;
   }
   &:disabled {
